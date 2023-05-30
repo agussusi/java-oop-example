@@ -1,15 +1,15 @@
 import java.util.ArrayList;
 
-interface Reading {
+interface ReadBook {
   void receiveBook(Book book);
   void giveBook(Book book);
 }
 
-interface Reading1 {
+interface ReadBook1 {
   Book getBookById(String id);
 }
 
-abstract class Member implements Reading, Reading1 {
+abstract class Member implements ReadBook, ReadBook1 {
   String id;
   String name;
   ArrayList<Book> borrowedBooks;
